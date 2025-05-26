@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game {
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.button[data-id="0"] {
+    background-color: red;
+}
+
+.button[data-id="1"] {
+    background-color: green;
+}
+
+.button[data-id="2"] {
+    background-color: blue;
+}
+
+.button[data-id="3"] {
+    background-color: yellow;
+}
+
+.button.active {
+    filter: brightness(1.5);
+}
+
+#message {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+#score {
+    font-size: 1.2em;
+    margin: 10px;
+}
